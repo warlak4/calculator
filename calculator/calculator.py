@@ -8,7 +8,7 @@ while a == 1:
     print("2. minus")
     print("3. umnogenie")
     print("4. delenie")
-    print("5. ctepen")
+    print("5. cnepen")
     print("6. koren kavdrat")
     print("7. faktorial")
     print("8. sin")
@@ -63,5 +63,7 @@ while a == 1:
     elif choice in ['0']:
         if choice == '0':
             break
+    else:
+        print("WAKE UP")
    
             
