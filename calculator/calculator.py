@@ -1,62 +1,67 @@
+from ast import While
 import math
 
-def cal():
-    print("Выберите операцию:")
-    print("1. Сложение")
-    print("2. Вычитание")
-    print("3. Умножение")
-    print("4. Деление")
-    print("5. Возведение в степень")
-    print("6. Квадратный корень")
-    print("7. Факториал")
-    print("8. Синус")
-    print("9. Косинус")
-    print("10. Тангенс")
+a = 1
+while a == 1:
+    print("Select operation:")
+    print("1. plusik")
+    print("2. minus")
+    print("3. umnogenie")
+    print("4. delenie")
+    print("5. cnepen")
+    print("6. koren kavdrat")
+    print("7. faktorial")
+    print("8. sin")
+    print("9. cos")
+    print("10. tan")
+    print("0. exit")
     
-    choice = input("Введите номер операции")
+    choice = input("Select number operation: ")
     
     if choice in ['1', '2', '3', '4']:
-        num1 = float(input("Введите первое число: "))
-        num2 = float(input("Введите второе число: "))
+         num1 = float(input("Enter first number: "))
+         num2 = float(input("Enter second number: "))
         
-        if choice == '1':
+         if choice == '1':
             result = num1 + num2
             print(result)
-        elif choice == '2':
+         elif choice == '2':
             result = num1 - num2
             print(result)
-        elif choice == '3':
+         elif choice == '3':
             result = num1 * num2
             print(result)
-        elif choice == '4':
+         elif choice == '4':
             if num2 == 0:
-                print("Это не выш мат")
+               print("IT IS NO HIGHER MATH")
             else:
-                result = num1 / num2
-                print(result)
+               result = num1 / num2
+               print(result)
                 
     elif choice in ['5', '6', '7', '8', '9', '10']:
-        num = float(input("Введите число: "))
+         num = float(input("Enter number: "))
         
-        if choice == '5':
-            power = float(input("Введите степень: "))
-            result = num ** power
-            print(result)
-        elif choice == '6':
-            result = math.sqrt(num)
-            print(result)
-        elif choice == '7':
-            result = math.factorial(int(num))
-            print(result)
-        elif choice == '8':
-            result = math.sin(num)
-            print(result)
-        elif choice == '9':
-            result = math.cos(num)
-            print(result)
-        elif choice == '10':
-            result = math.tan(num)
-            print(result)
+         if choice == '5':
+             power = float(input("Kakaya stepen: "))
+             result = num ** power
+             print(result)
+         elif choice == '6':
+             result = math.sqrt(num)
+             print(result)
+         elif choice == '7':
+             result = math.factorial(int(num))
+             print(result)
+         elif choice == '8':
+             result = math.sin(num)
+             print(result)
+         elif choice == '9':
+             result = math.cos(num)
+             print(result)
+         elif choice == '10':
+             result = math.tan(num)
+             print(result)
+    elif choice in ['0']:
+        if choice == '0':
+            break
+   
             
-    else:
-        print("Подумай ещё раз и введи правильно ")
